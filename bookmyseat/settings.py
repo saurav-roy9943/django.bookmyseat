@@ -41,7 +41,17 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'users',
     'movies',
+    'cloudinary',
+    'cloudinary_storage',
 ]
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dtwksljdh',
+    'API_KEY': '236812961649769',
+    'API_SECRET': 'JnMkvF6OxpRvJv6VK1mDLQFatrE'
+}
 
 MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
